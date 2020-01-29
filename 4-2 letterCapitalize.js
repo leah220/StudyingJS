@@ -1,5 +1,6 @@
 // 문자열을 parameter로 받아 각 단어의 첫번째 글자를 대문자로 만드는 메서드
 
+// 방법 1
 function letterCapitalize(str){
     let result = str.split(' ');
     console.log(result);
