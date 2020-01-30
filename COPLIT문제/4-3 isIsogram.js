@@ -22,4 +22,24 @@ let isIsogram = function(str) {
     return true;
   }
   
+
+
+  // 모델 솔루션 
+
+//   let isIsogram = function(str) {
+//     if(str.length === 0) {
+//       return true;
+//     }
   
+//     let storage = {};
+//     let strLowerCase = str.toLowerCase();
+  
+//     for(let i = 0; i < strLowerCase.length; i++) {
+//       if(storage[strLowerCase[i]]) {
+//         return false;
+//       }
+//       storage[strLowerCase[i]] = 1;
+//     }
+  
+//     return true;
+//   }

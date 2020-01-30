@@ -27,3 +27,31 @@ let primeMover = function(n) {
     // 3. 배열의 n-1번째 인덱스에 있는 요소 반환
   }
   
+
+
+  // 모델 솔루션
+
+//   let isPrime = function(n) {
+//     if (n < 2) {
+//       return false;
+//     }
+//     for (let i = 2; i < n; i += 1) {
+//       if (n % i === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+  
+//   let primeMover = function(num) {
+//     num = Number(num);
+//     let count = 0;
+//     let n = 0;
+//     while (count !== num) {
+//       n += 1;
+//       if (isPrime(n)) {
+//         count += 1;
+//       }
+//     }
+//     return n;
+//   }

@@ -22,3 +22,16 @@ function multiplicativePersistence(num) {
     return cnt;
   }
   
+
+  // 모델솔루션
+//   function multiplicativePersistence(num) {
+//     let count = 0;
+//     num = String(num);
+//     while (num.length >= 2) {
+//       count += 1;
+//       num = '' + num.split('').reduce(function(total, n) {
+//         return total * n;
+//       });
+//     }
+//     return count;
+//   }
