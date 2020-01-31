@@ -58,3 +58,7 @@ function numberSearch(str) {
 // 'a' > 'z'  //false
 // '1' > '2'  //false
 // '11' > '2' //false
+
+
+// 반올림 메서드
+// Math.round()
