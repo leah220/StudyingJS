@@ -1,5 +1,5 @@
 // 문자열이 주어졌을 때, 문자열에서 숫자를 모두 찾아 더한 뒤
-// 해당값을 (숫자, 공백을 제외한) 알파벳의 길이의 길이로 나눈 값을
+// 해당값을 (숫자, 공백을 제외한) 알파벳의 길이로 나눈 값을
 // 정수로 반올림하여 반환하는 메서드
 // 예 : 문자열 "Hello6 9World 2, Nic8e D7ay!"
 // 6 + 9 + 2 + 8 + 7 = 32
@@ -35,3 +35,26 @@ function numberSearch(str){
         return Math.floor(result)+1;
     }
 }
+
+// 모델솔루션
+function numberSearch(str) {
+    let numSum = 0;
+    let strCnt = 0;
+    for (let i = 0 ; i < str.length; i += 1) {
+      if (str[i] >= '0' && str[i] <= '9') {
+        numSum = numSum + Number(str[i]);
+      } else if((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+        strCnt = strCnt + 1;
+      }
+    }
+    return Math.round(numSum/strCnt);
+}
+
+// 꿀팁
+// 'z' > 'a'  //true
+// '2' > '1'  //true
+// 'a' > '1'  //true
+
+// 'a' > 'z'  //false
+// '1' > '2'  //false
+// '11' > '2' //false
