@@ -3,6 +3,7 @@
 
 
 // 방법 1
+// 3과 5의 배수를 배열에 넣어 배열의 총합을 구함
 function threeFiveMultiples(num) {
     let list = [];
     let result = 0;
@@ -28,7 +29,8 @@ function threeFiveMultiples(num) {
 
 
 
-// 모델솔루션
+// 모델솔루션 (좋은 방법)
+// 변수 result를 선언하고 num이하의 3과 5의 배수를 구해 더함
 function threeFiveMultiples(num) {
     let result = 0;
     for (let i = num - 1; i > 2; i--) {
