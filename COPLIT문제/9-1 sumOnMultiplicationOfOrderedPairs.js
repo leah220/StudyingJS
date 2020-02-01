@@ -1,5 +1,4 @@
-// 
-// 
+// 입력한 숫자에 대해 서로 다른 두 숫자의 모든 경우의 곱에 대한 합 구하는 메서드
 
 
 // 방법 1
@@ -10,7 +9,7 @@ function sumOnMultiplicationOfPairs(...arr) {
     for(let i=0 ; i<arr.length ; i++){
         for(let j=i+1 ; j<arr.length ; j++){
             gop.push(arr[i]*arr[j]);
-        }
+        }입려
     }
 
     for(let idx in gop){
