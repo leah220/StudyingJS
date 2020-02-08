@@ -1,3 +1,4 @@
+// [0. 조건문] 8. convertScoreToGradeWithPlusAndMinus
 // 점수가 주어졌을 때, 주어진 점수와 대응하는 등급을 문자열로 반환
 // 100 ~ 90 : 'A'
 // 89 ~ 80 : 'B'
@@ -37,7 +38,8 @@ function convertScoreToGradeWithPlusAndMinus(score){
     return char;
 }
 
-//my 2번째 풀이
+// 방법 2
+// slice() 메서드 사용
 function convertScoreToGradeWithPlusAndMinus(score){
     let grade;
     let one;
@@ -69,7 +71,8 @@ function convertScoreToGradeWithPlusAndMinus(score){
 
 
 
-// 3번째방법 : 모델 솔루션 (내가 볼 때 제일 좋은 답안)
+// 방법 3 (내가 볼 때 제일 좋은 답안)
+// plusOrMinus 메서드를 만듦
 function plusOrMinus(score) {
   if (String(score)[1] <= 2) {
     return '-';
