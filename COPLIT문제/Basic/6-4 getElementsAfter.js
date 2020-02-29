@@ -6,7 +6,7 @@
 
 // 방법 1 : slice 사용, my best
 function getElementsAfter(arr, idx){
-    let result = arr.slice(idx+1, arr.length+1);
+    let result = arr.slice(idx+1, arr.length);
   
     return result;
   }
