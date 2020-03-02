@@ -2,14 +2,14 @@
 // 다차원 배열이 주어졌을때,
 // 배열들의 요소를 모두 담고 있는 단일 배열을 반환합니다
 
-function joinArrayOfArrays(multiArray){
-    let result = multiArray.slice();
+function joinArrayOfArrays(multiArr){
+    let result = multiArr.slice();
 
-    result = result.reduce((arr, cur)=>{
-        if(Array.isArray(cur)){
-            arr = arr.concat(joinArrayOfArrays(cur));
+    result = result.reduce((arr, el)=>{
+        if(Array.isArray(el)){
+            arr = arr.concat(joinArrayOfArrays(el));
         }else{
-            arr.push(cur);
+            arr.push(el);
         }
         return arr;
     },[]);
