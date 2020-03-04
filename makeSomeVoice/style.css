@@ -1,0 +1,143 @@
+@font-face {
+    font-family: TheMario;
+    src: url('./static/fonts/THE마리오.ttf');
+}
+
+@font-face {
+    font-family: TheNews;
+    src: url('./static/fonts/THE뉴스속보.ttf')
+}
+
+#title {
+    text-align: center;
+    font-family: TheMario;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#topic {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: TheMario;
+    margin-left: auto; margin-right: auto;
+    margin-top: auto; margin-bottom: auto;
+    padding-top: 10px; padding-bottom: 10px;
+    float: right;
+}
+
+#discussionStatus {
+    margin-right: 0;
+    float: right;
+}
+
+#commentNum {
+    color: hotpink;
+    font-size: 22px;
+    font-family: TheMario;
+}
+
+.container {
+    width: 70%;
+    background-color: #0aab00;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top : 2px; margin-bottom: 2px;
+    padding-top: 5px; padding-bottom: 5px;
+}
+
+.innerContainer {
+    width: 70%;
+    margin-left: auto; margin-right: auto;
+    margin-top: auto; margin-bottom: auto;
+}
+
+.pros {
+    color: teal;
+    font-family: TheMario;
+    padding-left: 5px;    padding-right: 5px;
+}
+
+.cons {
+    color: tomato;
+    font-family: TheMario;
+    padding-left: 5px;    padding-right: 5px;
+}
+
+.prosVScons {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: wheat;
+}
+
+.vsBtn {
+    width: 50%;
+}
+
+.pressed {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(235, 180, 78);
+}
+
+.inputBlank {
+    width: 70%;
+    float: right;
+    font-family: TheMario;
+}
+
+.item {
+    width: 100px;
+    font-weight: 700;
+    font-family: TheMario;
+}
+
+.img {
+    /* float: left; */
+    max-width: 300px;
+    max-height: 300px;
+    width: 40%;
+}
+
+.noPadding {
+    padding-left: 0px; padding-right: 0px;
+    padding-top: 0px; padding-bottom: 0px;
+}
+
+.noMargin {
+    margin-left: 0px; margin-right: 0px;
+    margin-top: 0px; margin-bottom: 0px;
+}
+
+.button {
+    background-color: wheat;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: TheMario;
+}
+
+.text {
+    font-family: TheMario;
+}
+
+.userId {
+    font-family: TheNews;
+    padding-right: 20px;
+}
+
+.userPosition {
+    font-size: 11;
+    font-family: TheMario;
+}
+
+.userComment {
+    font-family: TheNews;
+}
+
+.createdAt {
+    font-family: TheNews;
+    font-size: 11px;
+    color: grey;
+}
+

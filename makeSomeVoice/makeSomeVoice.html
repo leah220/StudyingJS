@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>makeSomeVoice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="data.js"></script>
+</head>
+<body>
+    <div id="title" class="container">
+        <div class="innerContainer">
+            Make Some Voice
+        </div>
+    </div>
+    <div class="container">
+        <div class="innerContainer">
+            <img src="cactus.png" class="img"/>
+            <div id="topic">
+                We Need to Water<br>the Cactus!
+            </div>    
+        </div>
+    </div>
+    <div class="container">
+        <div class="innerContainer">
+            <div class="noPadding"><button id="prosBtn" class="pros prosVScons vsBtn noMargin">Pros</button><button id="consBtn" class="cons prosVScons vsBtn noMargin">Cons</button></div>
+            <br>
+            <div>
+                <span class="item">UserName</span>
+                <input type="text" id="username" class="inputBlank">
+            </div>
+            <br>
+            <div>
+                <span class="item">Comment</span>
+                <input type="text" id="comment" class="inputBlank">
+            </div>
+            <br>
+            <button id="speakBtn" class="button" style="width: 100%;">Speak!</button>                
+        </div>
+    </div>
+    <div class="container">
+        <div class="innerContainer">
+            <div>
+                <span class="text">There are </span>
+                <span id="commentNum"> 0 </span>
+                <span class="text"> opinions.</span>
+                <span id="discussionStatus">
+                    <span id="prosNum" class="pros prosVScons"> Pros(0) </span>
+                    <span id="consNum" class="cons prosVScons" style="margin-left:10px;"> Cons(0) </span>    
+                </span>
+            </div>
+            <ul id="commentList">
+                
+            </ul>                
+        </div>
+    </div>
+
+
+    <template id="template">
+        <li>
+            <span class="userId"></span>
+            <span class="userPosition"></span>
+            <div class="userComment"></div>
+            <span class="createdAt"></span>
+        </li>
+    </template>
+    <script src="makeSomeVoice.js"></script>
+</body>
+
+</html>
