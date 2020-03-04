@@ -25,3 +25,16 @@ function countCharacter(str, char) {
    
     return count; 
 }
+
+// 방법3 : 진행중 // 콘솔창에서는 작동하나 COPLIT에서는 작동하지 않음.
+function countCharacter( str , char ){
+  let count = 0;
+  let temp = str.split('');
+
+  while( temp.indexOf(char) !== -1 ){
+    count++;
+    temp[temp.indexOf(char)] = ' ';
+  }
+
+  return count;
+}

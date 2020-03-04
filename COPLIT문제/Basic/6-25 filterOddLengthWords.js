@@ -8,11 +8,11 @@
 // }
 
 function filterOddLengthWords(words) {
-    for(let i = 0 ; i < words.length ; i++){
-      if(words[i].length % 2 === 0){
-        words.splice(i,1);
-        i--;
-      }
+  for(let i = 0 ; i < words.length ; i++){
+    if(words[i].length % 2 === 0){
+      words.splice(i,1);
+      i--;
     }
-    return words;
   }
+  return words;
+}

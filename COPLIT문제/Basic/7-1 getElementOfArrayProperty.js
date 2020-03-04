@@ -5,12 +5,13 @@
 // 만약 주어진 키에 위치한 속성값이 배열이 아니라면 undefined 반환
 // 만약 주어진 키에 위치한 속성이 없다면 undefined 반환
 
-// 방법 1
+// 방법 1 : 모든 조건 표시
 function getElementOfArrayProperty(obj, key, idx){
     if(!Array.isArray(obj[key])){
         return undefined;
     // }else if(!obj.hasOwnProperty(key)){
     //     return undefined;
+    // 또는
     }else if(!(key in obj)){
         return undefined;
     }else if(obj[key].length === 0){
@@ -21,7 +22,7 @@ function getElementOfArrayProperty(obj, key, idx){
     return obj[key][idx];
 }
 
-// 방법 2
+// 방법 2 : 조건 최소화
 function getElementOfArrayProperty(obj, key, idx) {
     let arrayProperty = obj[key];
   
