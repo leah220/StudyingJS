@@ -20,3 +20,25 @@ function findMinByBracket(str){
     return result;
 }
 
+// 방법 2 : eval() 함수를 사용하지 않기
+function findMinByBracket(str){
+    let splitedStr = str.split('-');
+    let willBeJoined = [];
+    for(let i=0 ; i<splitedStr.length ; i++){
+        if(splitedStr[i].includes('+')){
+            let temp = splitedStr[i].split('+');
+            let tempNum = 0;
+            for(let j=0; j<temp.length; j++){
+                tempNum += Number(temp[j]);
+            }
+            willBeJoined.push(tempNum);    
+        }else{
+            willBeJoined.push(splitedStr[i]);
+        }
+    }
+    let result = willBeJoined[0];
+    for(let i=1 ; i<willBeJoined.length ; i++){
+        result -= willBeJoined[i];
+    }
+    return result;
+}
