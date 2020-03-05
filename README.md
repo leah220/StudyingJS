@@ -2,6 +2,8 @@
 
 
 
-1. Array ???
-2. 
-3. 
+## COPLIT문제
+
+## MakingClass
+
+## makeSomeVoice
